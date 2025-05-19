@@ -1,0 +1,25 @@
+{
+  "name": "mgx-proxy",
+  "version": "0.1.0",
+  "description": "Lightweight WebSocket proxy for enterprise traffic",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "test-client": "node src/test-client.js",
+    "test-client:deepgram": "DEEPGRAM_API_KEY=your_api_key_here node src/test-client.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "ws": "^8.14.2",
+    "pino": "^8.16.2",
+    "pino-pretty": "^10.2.3"
+  },
+  "keywords": [
+    "websocket",
+    "proxy",
+    "lightweight"
+  ],
+  "author": "Luke Oliff <luke@lukeoliff.com> (https://lu.ke.wtf)",
+  "license": "MIT"
+} 
